@@ -1,0 +1,36 @@
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+
+    @media (max-width: 443px) {
+        align-items: baseline;
+    }
+}
+
+.header-button {
+    margin-right: 1rem;
+}
+
+.right-part, .left-part {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 443px) {
+        flex-direction: column;
+    }
+}
+
+.right-part {
+    @media (max-width: 443px) {
+        align-items: flex-end;
+    }
+}
+
+.left-part {
+    @media (max-width: 443px) {
+        align-items: flex-start;
+    }
+}

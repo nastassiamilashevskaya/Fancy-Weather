@@ -1,0 +1,125 @@
+.weather-today-container, .weather-next-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -2rem;
+}
+
+.weather-next-container {
+    margin-top: 1.5rem;
+    padding-left: 3.5rem;
+    padding-right: 7.5rem;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+}
+
+.city {
+    font-size: 3rem;
+    font-weight: 200;
+    height: 4rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+    @media (max-width: 576px) {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    @media (max-width: 420px) {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+}
+
+.date {
+    font-size: 1.6rem;
+    font-weight: 200;
+
+    @media (max-width: 576px) {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    @media (max-width: 420px) {
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+
+.degrees-today {
+    font-size: 20rem;
+    line-height: 1;
+
+    @media (max-width: 992px) {
+        font-size: 18rem;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 16rem;
+    }
+
+    @media (max-width: 576px) {
+        font-size: 13rem;
+    }
+
+    @media (max-width: 477px) {
+        font-size: 12rem;
+    }
+
+    @media (max-width: 420px) {
+        font-size: 10rem;
+    }
+}
+
+.forecast-today {
+    font-size: 1.2rem;
+    position: relative;
+    top: 3.5rem;
+    right: 3.5rem;
+    line-height: 1;
+
+    @media (max-width: 576px) {
+        font-size: 1rem;
+    }
+    @media (max-width: 420px) {
+        font-size: 0.85rem;
+    }
+}
+
+.day-of-week {
+    font-size: 1.6rem;
+    font-weight: 200;
+}
+
+.degrees-next {
+    font-size: 3.5rem;
+}
+
+.weather-icon {
+    height: 180px;
+    width: 180px;
+    margin: 10px;
+
+    &-sm {
+        height: 70px;
+        position: relative;
+        top: -5.1rem;
+        right: -4.9rem;
+        width: 70px;    
+    }
+
+    @media (max-width: 576px) {
+        margin-top: 2rem;    
+    }
+}
+
+.next-day {
+    @media (max-width: 768px) {
+        margin-bottom: -1.5rem;
+    }
+}
+
+.white {fill:#FFFFFF}
+.gray {fill:#E0E0E0}
+.yellow {fill:#FFEB3B}
